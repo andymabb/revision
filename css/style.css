@@ -1,0 +1,185 @@
+/* Basic formatting */
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
+    margin: 0;
+    background: #2E2E2E;
+    color:#fff;
+    max-width: 1024px;
+    padding: 0 2em 2em;
+    margin: 0 auto;
+}
+/* End of basic formatting */
+
+.switch{
+  text-align: right;
+}
+
+.switch a{
+  padding: 1em;
+  text-decoration: underline;
+  display: block;
+  transform: translateX(1em);
+}
+.header{
+  display: flow-root;
+  margin-bottom: 2em;
+}
+
+h1{
+    color:#ef6701;
+    font-weight: normal;
+    line-height: 1;
+  }
+
+h1::first-letter{
+    font-size: 10rem;
+    font-weight: bold;
+    float:left;
+    }
+
+h1 span{
+  font-size: 3rem;
+}
+    
+h1 span:nth-child(3){
+  font-weight: bold;
+  display:block;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.author{
+    color:#fff;
+    grid-column: 2;
+    grid-row: 3;
+    text-align: right;
+}
+
+.stress-relief{
+  display:grid;
+  list-style-type: none;
+  text-align: center;
+  gap:1em;
+  gap:clamp(1em, 2vw, 3em);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin-bottom: 2em;
+}
+
+.stress-relief li::before{
+  content: "";
+  display: block;
+  aspect-ratio: 463 / 430;
+  margin-bottom: .5em;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.stress-relief li{
+  font-size: 1.2em;
+}
+
+/* Background Images */
+.stress-relief li::before{
+  background-size: cover;
+}
+
+.stress-relief li:nth-child(1)::before{
+  background-image: url('../images/1.png');
+}
+/* If AVIF supported (see script in index.html head section) download the (smaller) .avif image*/
+.avif .stress-relief li:nth-child(1)::before{
+  background-image: url('../images/1.avif');
+}
+
+.stress-relief li:nth-child(2)::before{
+  background-image: url('../images/2.png');
+}
+.avif .stress-relief li:nth-child(2)::before{
+  background-image: url('../images/2.avif');
+}
+
+.stress-relief li:nth-child(3)::before{
+  background-image: url('../images/3.png');
+}
+.avif .stress-relief li:nth-child(3)::before{
+  background-image: url('../images/3.avif');
+}
+
+.stress-relief li:nth-child(4)::before{
+  background-image: url('../images/4.png');
+}
+.avif .stress-relief li:nth-child(4)::before{
+  background-image: url('../images/4.avif');
+}
+
+.stress-relief li:nth-child(5)::before{
+  background-image: url('../images/5.png');
+}
+.avif .stress-relief li:nth-child(5)::before{
+  background-image: url('../images/5.avif');
+}
+
+.stress-relief li:nth-child(6)::before{
+  background-image: url('../images/6.png');
+}
+.avif .stress-relief li:nth-child(6)::before{
+  background-image: url('../images/6.avif');
+}
+
+.stress-relief li:nth-child(7)::before{
+  background-image: url('../images/7.png');
+}
+.avif .stress-relief li:nth-child(7)::before{
+  background-image: url('../images/7.avif');
+}
+
+.stress-relief li:nth-child(8)::before{
+  background-image: url('../images/8.png');
+}
+.avif .stress-relief li:nth-child(8)::before{
+  background-image: url('../images/8.avif');
+}
+
+.stress-relief li:nth-child(9)::before{
+  background-image: url('../images/9.png');
+}
+.avif .stress-relief li:nth-child(9)::before{
+  background-image: url('../images/9.png');
+}
