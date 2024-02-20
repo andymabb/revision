@@ -8,4 +8,5 @@ An HTML file is Accessible to Screen Readers, Braille Pads etc.  Content resizes
 One twentyth the size - Single image weighs ~1MB. HTML, CSS and images total ~50kb! Adding a translation adds just 3kb.
 * Flexibility:
 Easy to update and edit.  Very quick to make different language versions.
-* Next generation images - The background image(s) use the latest compression technologies (AVIF with a fallback to JPG for older devices).
+
+Only new gen images (avif)
